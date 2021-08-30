@@ -10,13 +10,13 @@
   	<title>Cadastrar Usuário - Sistema de Gerenciamento de Livro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Edson Magalhaes da Costa"/>
+		<meta name="description" content="Sistema para gerenciamento de livros"/>
+		<meta name="keywords" content="gerenciamento, livro, php, postgress, sistema">
 
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">		
 		<link rel="stylesheet" href="../../../css/style.css">
-
 		<link rel="shortcut icon" href="../../../images/favicon.png" />
 
 	</head>
@@ -46,11 +46,11 @@
 						<form class="login-form" action="../controller/gravar_usuario.php" method="POST">
 		      		<div class="form-group">
 		      			<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-		      			<input type="text" name="nome" class="form-control rounded-left" placeholder="Nome" required>
+		      			<input type="text" name="nome" maxlength="75" class="form-control rounded-left" placeholder="Nome" required>
 		      		</div>
 		      		<div class="form-group">
 		      			<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-envelope"></span></div>
-		      			<input type="email" name="email" class="form-control rounded-left" placeholder="E-mail" required>
+		      			<input type="email" name="email" maxlength="115" class="form-control rounded-left" placeholder="E-mail" required>
 		      		</div>
 	            <div class="form-group">
 	            	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>

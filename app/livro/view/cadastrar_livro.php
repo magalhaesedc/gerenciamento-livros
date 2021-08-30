@@ -18,6 +18,10 @@ if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
 	<title>Cadastrar Livro - Sistema de Gerenciamento de Livro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Edson Magalhaes da Costa"/>
+	<meta name="description" content="Sistema para gerenciamento de livros"/>
+	<meta name="keywords" content="gerenciamento, livro, php, postgress, sistema">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../../../css/style.css">
@@ -80,15 +84,15 @@ if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
 
 			<div class="form-group">
 			    <label for="isbn">ISBN</label>
-			    <input required type="text" class="form-control" id="isbn" name="isbn" aria-describedby="emailHelp" placeholder="Digite o ISBN do livro">
+			    <input required type="text" maxlength="28" class="form-control" id="isbn" name="isbn" aria-describedby="emailHelp" placeholder="Digite o ISBN do livro">
 			</div>
 			<div class="form-group">
 			    <label for="titulo">Título</label>
-			    <input required type="text" class="form-control" id="titulo" name="titulo" placeholder="Digite o título do livro">
+			    <input required type="text" maxlength="78" class="form-control" id="titulo" name="titulo" placeholder="Digite o título do livro">
 			</div>
 			<div class="form-group">
 			    <label for="autor">Autor(es)</label>
-			    <input required type="text" class="form-control" id="autor" name="autor" placeholder="Digite o nome do(s) autor(es) do livro, separado por virgula">
+			    <input required type="text" maxlength="78" class="form-control" id="autor" name="autor" placeholder="Digite o nome do(s) autor(es) do livro, separado por virgula">
 			</div>
 			<div class="form-group">
 			    <label for="edicao">Edição</label>
@@ -96,7 +100,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
 			</div>
 			<div class="form-group">
 			    <label for="editora">Editora</label>
-			    <input required type="text" class="form-control" id="editora" name="editora" placeholder="Digite a editora do livro">
+			    <input required type="text" maxlength="48" class="form-control" id="editora" name="editora" placeholder="Digite a editora do livro">
 			</div>
 			<div class="form-group">
 			    <label for="ano-publicacao">Ano de Publicação</label>
