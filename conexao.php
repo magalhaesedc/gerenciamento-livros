@@ -4,7 +4,9 @@ $host = "localhost";
 $user = "postgres";
 $password = "postgres";
 $db = "techlead";
-$driver = "pgsql:host=".$host.";port=5433;dbname=".$db;
+$port = "5433";
+
+$driver = "pgsql:host=".$host.";port=".$port.";dbname=".$db;
 
 $pdo = new PDO($driver, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
