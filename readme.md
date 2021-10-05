@@ -1,4 +1,4 @@
-# Projeto em PHP - Bootstrap, PDO & MySQL
+# Projeto em PHP - Bootstrap, PDO & PostgreSQL
 
 Desenvolvimento de um projeto de Sistema de Gerenciamento de Livros utilizando o acesso a banco de dados com o PostgreSQL e linguagem PHP.
 
